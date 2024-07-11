@@ -4,10 +4,17 @@ import styled from "@emotion/styled"
 
 /**
  * 아티스트 페이지, full width 컨텐츠 컨테이너
+ * @param { 'string' } color 배경색
  */
-export default function FullWContainer({ children }: { children: React.ReactNode }) {
+export default function FullWContainer({
+    children,
+    color
+}: {
+    children: React.ReactNode
+    color: string
+}) {
     return (
-        <ContentContainer>
+        <ContentContainer color={color}>
             {children}
         </ContentContainer>
     )
@@ -17,4 +24,5 @@ export default function FullWContainer({ children }: { children: React.ReactNode
 const ContentContainer = styled.div`
     width: 100%;
     height: 100%;
+    background-color: ${({ color }) => color};
 `

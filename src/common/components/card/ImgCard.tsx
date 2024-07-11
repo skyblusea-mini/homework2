@@ -27,4 +27,5 @@ const ImgWrapper = styled.div`
   position: relative;
   aspect-ratio: 1/1;
   overflow: hidden;
+  border-radius: var(--radius-md);
 `
