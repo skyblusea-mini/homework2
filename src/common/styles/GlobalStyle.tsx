@@ -176,13 +176,13 @@ const resetCss = css`
     --margin-md: 16px;
     --margin-lg: 24px;
     --margin-xl: 32px;
-    --margin-layout: 20px;
-
+    
     /* padding */
     --padding-xs: 4px;
     --padding-sm: 8px;
     --padding-md: 16px;
     --padding-lg: 24px;
+    --padding-layout: 20px;
 
     /* MUI 기본 전역 변수 (개발용) */
     /**
