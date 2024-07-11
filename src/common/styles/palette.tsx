@@ -16,17 +16,13 @@ const palette = {
   },
 
   neutral: {
-    900: '#7c7c7c',
-    800: '#959595',
-    700: '#D8D8D8',
-    600: '#E8E8E8',
-    500: '#F8F8F8',
-    400: '#c6c6c6',
-    300: '#aeaeae',
-    200: '#f9f9f9',
-    100: '#fafafa',
-    50: '#fbfbfb',
     solidColor: "#46464E", // 텍스트 색상
+    solidBg: '#F8F8F8',
+    solidBorder: '#F8F8F8',
+    solidHoverBg: '#E8E8E8',
+    solidHoverBorder: '#D8D8D8',
+    solidActiveBg: '#D8D8D8',
+    solidActiveBorder: '#C8C8C8',
     solidDisabledBg: "var(--Modern-Gray)",
     solidDisabledColor: "#ffffff",
   },
