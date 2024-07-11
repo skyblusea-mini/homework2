@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 /**
  * 양옆 마진이 있는 컨텐츠 컨테이너
  */
-export default function MarginWContainer({ children }: { children: React.ReactNode }) {
+export default function PaddingWContainer({ children }: { children: React.ReactNode }) {
     return (
         <ContentContainer>
             {children}
@@ -13,7 +13,7 @@ export default function MarginWContainer({ children }: { children: React.ReactNo
 
 
 const ContentContainer = styled.div`
-    margin: 0 var(--margin-layout);
+    padding: 0 var(--padding-layout);
     width: 100%;
     height: 100%;
 `
