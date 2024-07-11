@@ -25,6 +25,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+
     /* 절대 경로 설정 */
     "baseUrl": ".",
     "paths": {
@@ -33,7 +34,7 @@
       "@feature/*": ["src/feature/*"],
       "@common/*": ["src/common/*"],
       "@redux/*": ["src/redux/*"],
-      "@router/*": ["src/router/*"],
+      "@router/*": ["src/router/*"]
     }
   },
   "include": ["src"]

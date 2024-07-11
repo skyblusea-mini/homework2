@@ -1,15 +1,24 @@
 import MainLayout from '@src/common/layout/MainLayout'
-import { createBrowserRouter } from 'react-router-dom'
-import homeRouter from '@router/home/homeRouter'
+import {createBrowserRouter} from 'react-router-dom'
 import path from '@common/constants/router.constants'
+import Mypage from '@src/feature/mypage/page/Mypage'
+import HomePage from '@src/feature/home/page/HomePage'
 
 /** root Router */
-const rootRouter = createBrowserRouter([
+const rootRouter: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
   {
-    path: path.home,
     element: <MainLayout />,
-    children: [...homeRouter]
-  }
+    children: [
+      {
+        path: path.home.root,
+        element: <HomePage />,
+      },
+      {
+        path: path.mypage.root,
+        element: <Mypage />,
+      },
+    ],
+  },
 ])
 
 export default rootRouter
