@@ -4,6 +4,12 @@ import { Global, css } from '@emotion/react';
  *  글로벌 리셋 스타일
  */
 const resetCss = css`
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
   html,
   body,
   div,
@@ -130,17 +136,14 @@ const resetCss = css`
     border-spacing: 0;
   }
 
+
   #root {
-    width: 100%;
-    height: 100vh;
+    margin: 0 auto;
   }
 
   body,
   root {
-    padding: 0;
-    margin: 0;
     background-color: #f0f0f0;
-    overflow: hidden;
   }
 
   a {
@@ -164,11 +167,12 @@ const resetCss = css`
     --Faded-Ash: var(--palette-primary-500);
     --Modern-Gray: #AAAEB6;
     --Faded-Ash: #72747E;
+    --Royal-Black: #1C1C1E;
 
     /* layout */
     --header-h : 80px;
     --footer-h : 60px;
-    --max-w : 768px;
+    --max-w : 640px;
 
     /* margin */
     --margin-xs: 4px;
@@ -183,6 +187,9 @@ const resetCss = css`
     --padding-md: 16px;
     --padding-lg: 24px;
     --padding-layout: 20px;
+
+    /* z-index */
+    --zIndex-header: 100;
 
     /* MUI 기본 전역 변수 (개발용) */
     /**
@@ -222,6 +229,7 @@ const resetCss = css`
     --shadow-xl: var(--shadowRing, 0 0 #000), 0px 2px 8px -2px rgba(var(--shadowChannel, 21 21 21) / var(--shadowOpacity, 0.08)), 0px 20px 24px -4px rgba(var(--shadowChannel, 21 21 21) / var(--shadowOpacity, 0.08));
     --zIndex-badge: 1;
     --zIndex-table: 10;
+
     --zIndex-popup: 1000;
     --zIndex-modal: 1300;
     --zIndex-snackbar: 1400;
