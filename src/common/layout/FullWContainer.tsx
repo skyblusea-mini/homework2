@@ -11,7 +11,7 @@ export default function FullWContainer({
     color
 }: {
     children: React.ReactNode
-    color: string
+    color?: string
 }) {
     return (
         <ContentContainer color={color}>
@@ -21,8 +21,15 @@ export default function FullWContainer({
 }
 
 
-const ContentContainer = styled.div`
+const ContentContainer = styled.main`
+    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    max-width: var(--max-w);
     height: 100%;
+    min-height: 100vh;
+    flex: 1;
     background-color: ${({ color }) => color};
+    padding-top: var(--header-h);
 `

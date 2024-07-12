@@ -1,5 +1,6 @@
 import styled from "@emotion/styled"
 
+
 /**
  * 양옆 마진이 있는 컨텐츠 컨테이너
  * @param { 'string' } color 배경색
@@ -9,7 +10,7 @@ export default function PaddingWContainer({
     color
 }: {
     children: React.ReactNode
-    color: string
+    color?: string;
 }) {
     return (
         <ContentContainer color={color}>
@@ -20,8 +21,17 @@ export default function PaddingWContainer({
 
 
 const ContentContainer = styled.div`
-    padding: 0 var(--padding-layout);
+    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    max-width: var(--max-w);
     height: 100%;
+    min-height: 100vh;
+    flex: 1;
+    padding: 0 var(--padding-layout);
+    padding-top: var(--header-h);
     background-color: ${({ color }) => color};
 `
+
+
