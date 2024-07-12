@@ -1,7 +1,7 @@
 import MainLayout from '@src/common/layout/MainLayout'
-import {createBrowserRouter} from 'react-router-dom'
+import { createBrowserRouter } from 'react-router-dom'
 import path from '@common/constants/router.constants'
-import Mypage from '@src/feature/mypage/page/Mypage'
+// import Mypage from '@src/feature/mypage/page/Mypage'
 import HomePage from '@src/feature/home/page/HomePage'
 
 /** root Router */
@@ -15,7 +15,7 @@ const rootRouter: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
       },
       {
         path: path.mypage.root,
-        element: <Mypage />,
+        // element: <Mypage />,
       },
     ],
   },
