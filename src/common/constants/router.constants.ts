@@ -15,8 +15,8 @@ const routerPath = Object.freeze({
     noti: '/mypage/noti',
     lang: '/mypage/lang',
   },
-  noti: {
-    noti: '/noti',
+  alarm: {
+    root: '/alarm',
   },
   faq: {
     root: '/faq',
@@ -27,11 +27,14 @@ const routerPath = Object.freeze({
   userInfo: {
     root: '/user-info',
   },
+  voucher: {
+    root: '/voucher',
+  },
   history: {
-    root: '/',
-    letter: 'letter:id',
-    call: 'call:id',
-    audio: 'call:id:audioId',
+    root: '/history',
+    letter: '/history/letter:id',
+    call: '/history/call:id',
+    audio: '/history/call:id:audioId',
   },
 })
 
