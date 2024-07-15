@@ -27,18 +27,19 @@ export default function MainHeader({ bgColor }: MainHeaderProps) {
 
 interface HeaderWrapperProps {
     bgColor?: string
+    end?: boolean
 }
 
 /** 기본 헤더 컨테이너
  * @param bgColor - 배경색
  */
-const HeaderWrapper = styled.header<HeaderWrapperProps>`
+export const HeaderWrapper = styled.header<HeaderWrapperProps>`
     height: var(--header-h);
     width: 100%;
     max-width: var(--max-w);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: ${props => props.end ? 'flex-end' : 'space-between'};
     background-color: ${props => props.bgColor ?? 'transparent'};
     position: absolute;
     top: 0;

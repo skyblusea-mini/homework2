@@ -163,11 +163,17 @@ const resetCss = css`
     --Sup-G-Color: var(--palette-neutral-500);
     --Emerald-Green: var(--palette-success-500);
     --Flame-Red: var(--palette-danger-500);
-    --Modern-Gray: var(--palette-primary-500);
-    --Faded-Ash: var(--palette-primary-500);
     --Modern-Gray: #AAAEB6;
     --Faded-Ash: #72747E;
     --Royal-Black: #1C1C1E;
+    --Off-White: #F6F7F9;
+    --Soft-Gray: #EBECEF;
+    --Modern-Gray: #AAAEB6;
+    --Faded-Ash: #72747E;
+    --Faded-Charcoal: #46464E;
+    --Pure-Black: #000000;
+    --WH: #FFFFFF;
+
 
     /* layout */
     --header-h : 80px;

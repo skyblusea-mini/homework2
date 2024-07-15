@@ -1,6 +1,7 @@
 import { Grid, Typography } from "@mui/joy";
 import ImgCard from "@src/common/components/card/ImgCard";
 import ImgLabelCard from "@src/common/components/card/ImgLabelCard";
+import { Link } from "react-router-dom";
 
 type Artist = {
     id: string
@@ -27,7 +28,9 @@ export default function ArtistGrid({
             <Grid container sx={{ flexGrow: 1 }} spacing={3}>
                 {artists.map(artist => (
                     <Grid xs={6} key={artist.id}>
-                        <ImgLabelCard src={artist.img} alt={artist.name} label={artist.name} />
+                        <Link to="/artist/0">
+                            <ImgLabelCard src={artist.img} alt={artist.name} label={artist.name} />
+                        </Link>
                     </Grid>
                 ))}
             </Grid>

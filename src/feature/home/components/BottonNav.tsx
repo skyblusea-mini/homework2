@@ -3,6 +3,7 @@ import RoundButton from "@src/common/components/buttons/RoundButton";
 import { FaHouse } from "react-icons/fa6";
 import { PiMailboxFill } from "react-icons/pi";
 import { IoPerson } from "react-icons/io5";
+import path from '@common/constants/router.constants'
 
 
 export default function BottomNav() {
@@ -42,8 +43,8 @@ const IconBtn = ({
     active?: boolean
 }) => {
     return (
-        <RoundButton size="lg" color={active ? 'primary' : 'neutral'} variant="solid">
-            <SvgIcon color={active ? 'default' : 'primary'}>
+        <RoundButton to={path.voucher.root} size="lg" color={active ? 'primary' : 'neutral'} variant="solid">
+            <SvgIcon color={active ? 'inherit' : 'primary'}>
                 {children}
             </SvgIcon>
         </RoundButton>
